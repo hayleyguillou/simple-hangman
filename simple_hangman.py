@@ -49,10 +49,12 @@ while 1:
                 else:
                     lives -= 1
 
+    print(man(lives))
+    print(spaces(guessed, answer))
     if correct:
         print("\nCongratulations! You won!")
     else:
-        print("\n", man(lives), "\nSorry, you lost! The word was:", answer)
+        print("\nSorry, you lost! The word was:", answer)
 
     playAgain = input("\nWould you like to play again?")
 
